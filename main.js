@@ -34,11 +34,8 @@ let btn = document.querySelector(".subBut");
 btn.addEventListener("click", searchFor);
 
 function searchFor() {
-  console.log("Entrei");
-  console.log(input.value);
   let countryData = input.value;
   let dateData = date.value;
-  console.log(dateData);
   let splitDateData = dateData.split("-");
   let dayData = splitDateData[2];
   let nextDay = parseInt(dayData) + 1;
@@ -48,6 +45,8 @@ function searchFor() {
 
   countries.forEach((element) => {
     if (element.Country === countryData) {
+      document.querySelector(".countryName").innerHTML =
+        countryData.toUpperCase();
       countryData = element.Slug;
     }
   });
