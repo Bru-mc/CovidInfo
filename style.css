@@ -1,0 +1,136 @@
+body {
+  background: #171420;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+}
+
+header .title {
+  color: #ffffff;
+  font-size: 144px;
+  font-weight: 800;
+  display: inline;
+}
+header img {
+  height: 150px;
+  position: relative;
+  top: 27px;
+  right: 20px;
+}
+
+header .searchbar {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+header .searchbar #search {
+  background: #ffffff;
+  height: 30px;
+  width: 33%;
+  border: none;
+  border-top-left-radius: 5.7px;
+  border-bottom-left-radius: 5.7px;
+}
+header .searchbar #date {
+  background: #ffffff;
+  width: 17%;
+  padding: 0%;
+  border: none;
+  cursor: pointer;
+}
+
+header .searchbar .subBut {
+  background: #ffffff;
+  border: none;
+  border-top-right-radius: 5.7px;
+  border-bottom-right-radius: 5.7px;
+  cursor: pointer;
+}
+.countryName {
+  font-size: 1.3em;
+  color: #ffffff;
+  margin-top: 100px;
+  margin-left: 8%;
+}
+.dashboard {
+  margin-left: 8%;
+  margin-right: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dashboard .card {
+  background: #ffffff;
+  margin-top: 50px;
+  width: 197px;
+  height: 90px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.dashboard .TitleCard {
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 197px;
+  border-top-left-radius: 4.2px;
+  border-top-right-radius: 4.2px;
+  background-color: #e32632;
+}
+.dashboard .card > h3 {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+  header .title {
+    font-size: 134px;
+  }
+}
+@media screen and (max-width: 880px) {
+  header .title {
+    font-size: 114px;
+  }
+}
+@media screen and (max-width: 700px) {
+  header .title {
+    font-size: 94px;
+  }
+  .countryName {
+    text-align: center;
+    margin-left: 0;
+  }
+  .dashboard {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 540px) {
+  header .title {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .title {
+    font-size: 50px;
+  }
+  header .searchbar {
+    margin-top: 20px;
+  }
+  header .searchbar button {
+    height: 25px;
+    font-size: 85.7%;
+  }
+}

@@ -5,23 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CovidInfo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1 class="title">COVID-19</h1>
-      <div class="searchbar">
-        <input type="text" name="search" id="sbar" />
-        <ul class="options"></ul>
+      <div>
+        <h1 class="title">Covid-19</h1>
+        <img src="/imagens/covid.png" alt="" />
+        <div class="searchbar">
+          <input type="text" name="search" id="search" />
+          <input type="date" name="date" id="date" />
+          <button class="subBut">Search</button>
+        </div>
       </div>
     </header>
     <h2 class="countryName">Exemplo</h2>
     <div class="dashboard">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="card">
+        <div class="TitleCard"><h3>Total Confirmados</h3></div>
+        <h3 class="conf">Numero</h3>
+      </div>
+      <div class="card">
+        <div class="TitleCard"><h3>Total Mortes</h3></div>
+        <h3 class="mort">Numero</h3>
+      </div>
+      <div class="card">
+        <div class="TitleCard"><h3>Total Recuperados</h3></div>
+        <h3 class="rec">Numero</h3>
+      </div>
+      <div class="card">
+        <div class="TitleCard"><h3>Total Ativos</h3></div>
+        <h3 class="ati">Numero</h3>
+      </div>
     </div>
   </body>
+  <script src="main.js"></script>
 </html>
